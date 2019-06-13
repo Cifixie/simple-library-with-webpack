@@ -7,8 +7,8 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "main.js",
-    library: "MyLibrary",
+    filename: "index.js",
+    library: "",
     libraryTarget: "umd"
   },
   module: {
@@ -38,5 +38,11 @@ module.exports = {
     port: 9000
   },
   target: "web",
-  plugins: [new HtmlWebpackPlugin(), new MiniCssExtractPlugin()]
+  plugins: [
+    new HtmlWebpackPlugin(),
+    new MiniCssExtractPlugin({
+      filename: "index.css",
+      chunkFilename: "[id].css"
+    })
+  ]
 };
