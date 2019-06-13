@@ -1,8 +1,9 @@
 {
   "name": "simple-library-with-webpack",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "repository": "git@github.com:Cifixie/simple-library-with-webpack.git",
+  "license": "UNLICENSED",
   "scripts": {
     "build": "webpack",
     "start:dev": "webpack-dev-server"
