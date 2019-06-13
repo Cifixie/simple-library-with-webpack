@@ -1,6 +1,12 @@
+import get from "lodash/get";
+import "./One.css";
+
 class One {
+  obj = {
+    animal: "kissa"
+  };
   constructor() {
-    console.log("One");
+    console.log(get(this.obj, "animal"));
   }
 }
 
